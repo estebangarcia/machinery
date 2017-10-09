@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/estebangarcia/machinery/v1/config"
+	"github.com/RichardKnop/machinery/v1/config"
 )
 
 func TestAmqpAmqp(t *testing.T) {

@@ -6,13 +6,13 @@ import (
 	"os"
 	"time"
 
-	"github.com/estebangarcia/machinery/v1"
-	"github.com/estebangarcia/machinery/v1/config"
-	"github.com/estebangarcia/machinery/v1/log"
-	"github.com/estebangarcia/machinery/v1/tasks"
+	"github.com/RichardKnop/machinery/v1"
+	"github.com/RichardKnop/machinery/v1/config"
+	"github.com/RichardKnop/machinery/v1/log"
+	"github.com/RichardKnop/machinery/v1/tasks"
 	"github.com/urfave/cli"
 
-	exampletasks "github.com/estebangarcia/machinery/example/tasks"
+	exampletasks "github.com/RichardKnop/machinery/example/tasks"
 )
 
 var (
