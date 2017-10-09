@@ -12,9 +12,9 @@
 ## or in a dependency.
 # ignored = ["github.com/user/project/badpkg"]
 
-## Dependencies define constraints on dependent projects. They are respected by
+## constraint define constraints on dependent projects. They are respected by
 ## dep whether coming from the Gopkg.toml of the current project or a dependency.
-# [[dependencies]]
+# [[constraint]]
 ## Required: the root import path of the project being constrained.
 # name = "github.com/user/project"
 #
@@ -27,8 +27,8 @@
 ## Optional: an alternate location (URL or import path) for the project's source.
 # source = "https://github.com/myfork/package.git"
 
-## Overrides have the same structure as [[dependencies]], but supercede all
-## [[dependencies]] declarations from all projects. Only the current project's
+## Overrides have the same structure as [[constraint]], but supercede all
+## [[constraint]] declarations from all projects. Only the current project's
 ## [[overrides]] are applied.
 ##
 ## Overrides are a sledgehammer. Use them only as a last resort.
@@ -51,46 +51,46 @@
 
 
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/RichardKnop/logging"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/bradfitz/gomemcache"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/garyburd/redigo"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/kelseyhightower/envconfig"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/satori/go.uuid"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/streadway/amqp"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/stretchr/testify"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "github.com/urfave/cli"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "gopkg.in/mgo.v2"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "gopkg.in/redsync.v1"
 
-[[dependencies]]
+[[constraint]]
   branch = "master"
   name = "gopkg.in/yaml.v2"
