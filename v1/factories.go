@@ -14,6 +14,10 @@ import (
 // BrokerFactory creates a new object of brokers.Interface
 // Currently only AMQP/S broker is supported
 func BrokerFactory(cnf *config.Config) (brokers.Interface, error) {
+	if strings.HasPrefix(cnf.ResultBackend, "http://") {
+		return backends.NewAPIBackend(cnf), nil
+	}
+
 	if strings.HasPrefix(cnf.Broker, "amqp://") {
 		return brokers.NewAMQPBroker(cnf), nil
 	}

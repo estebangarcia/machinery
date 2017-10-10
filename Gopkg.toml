@@ -49,8 +49,6 @@
 ## what source location any dependent projects specify.
 # source = "https://github.com/myfork/package.git"
 
-
-
 [[constraint]]
   branch = "master"
   name = "github.com/RichardKnop/logging"
@@ -94,3 +92,7 @@
 [[constraint]]
   branch = "master"
   name = "gopkg.in/yaml.v2"
+
+[[constraint]]
+  name = "github.com/valyala/fasthttp"
+  version = "20160617.0.0"

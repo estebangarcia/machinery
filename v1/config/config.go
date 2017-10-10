@@ -34,7 +34,6 @@ type Config struct {
 	ResultBackend   string      `yaml:"result_backend" envconfig:"RESULT_BACKEND"`
 	ResultsExpireIn int         `yaml:"results_expire_in" envconfig:"RESULTS_EXPIRE_IN"`
 	AMQP            *AMQPConfig `yaml:"amqp"`
-	BaseURL         *APIConfig  `yaml:"api"`
 	TLSConfig       *tls.Config
 }
 
@@ -48,10 +47,6 @@ type AMQPConfig struct {
 	QueueBindingArgs QueueBindingArgs `yaml:"queue_binding_args" envconfig:"AMQP_QUEUE_BINDING_ARGS"`
 	BindingKey       string           `yaml:"binding_key" envconfig:"AMQP_BINDING_KEY"`
 	PrefetchCount    int              `yaml:"prefetch_count" envconfig:"AMQP_PREFETCH_COUNT"`
-}
-
-type APIConfig struct {
-	BaseURL string `yaml:"base_url" envconfig:"API_BASE_URL"`
 }
 
 // Decode from yaml to map (any field whose type or pointer-to-type implements

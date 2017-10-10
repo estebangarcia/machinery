@@ -8,8 +8,8 @@
   revision = "0745ebe7cc826d7d0453c7c9f08ea75a7fe86f7b"
 
 [[projects]]
-  name = "github.com/estebangarcia/machinery"
-  packages = ["example/tasks","v1","v1/backends","v1/brokers","v1/common","v1/config","v1/log","v1/retry","v1/tasks"]
+  name = "github.com/RichardKnop/machinery"
+  packages = ["v1/backends","v1/brokers","v1/common","v1/config","v1/log","v1/retry","v1/tasks"]
   revision = "68f4317d72d399650e9297fca69a297fcb1ba73b"
   version = "v1.0.4"
 
@@ -26,6 +26,12 @@
   revision = "346938d642f2ec3594ed81d874461961cd0faa76"
 
 [[projects]]
+  name = "github.com/estebangarcia/machinery"
+  packages = ["example/tasks","v1","v1/backends","v1/brokers","v1/common","v1/config","v1/log","v1/retry","v1/tasks"]
+  revision = "68f4317d72d399650e9297fca69a297fcb1ba73b"
+  version = "v1.0.4"
+
+[[projects]]
   branch = "master"
   name = "github.com/garyburd/redigo"
   packages = ["internal","redis"]
@@ -36,6 +42,24 @@
   name = "github.com/kelseyhightower/envconfig"
   packages = ["."]
   revision = "70f0258d44cbaa3b6a2581d82f58da01a38e4de4"
+
+[[projects]]
+  name = "github.com/klauspost/compress"
+  packages = ["flate","gzip","zlib"]
+  revision = "6c8db69c4b49dd4df1fff66996cf556176d0b9bf"
+  version = "v1.2.1"
+
+[[projects]]
+  name = "github.com/klauspost/cpuid"
+  packages = ["."]
+  revision = "ae7887de9fa5d2db4eaa8174a7eff2c1ac00f2da"
+  version = "v1.1"
+
+[[projects]]
+  name = "github.com/klauspost/crc32"
+  packages = ["."]
+  revision = "cb6bfca970f6908083f26f39a79009d608efd5cd"
+  version = "v1.1"
 
 [[projects]]
   branch = "master"
@@ -68,6 +92,12 @@
   revision = "4b90d79a682b4bf685762c7452db20f2a676ecb2"
 
 [[projects]]
+  name = "github.com/valyala/fasthttp"
+  packages = [".","fasthttputil"]
+  revision = "d42167fd04f636e20b005e9934159e95454233c7"
+  version = "v20160617"
+
+[[projects]]
   branch = "master"
   name = "gopkg.in/mgo.v2"
   packages = [".","bson","internal/json","internal/sasl","internal/scram"]
@@ -88,6 +118,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "5c5f0cd883b09da288ba1c8a254e84fdfbd9c21440a4b58123d77f14d88dbfc6"
+  inputs-digest = "b02ede27e39ffde66aa286d5f715bb7a6f567505da27736f4f6510f534840fdb"
   solver-name = "gps-cdcl"
   solver-version = 1
