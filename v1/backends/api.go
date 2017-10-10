@@ -245,7 +245,7 @@ func (a *APIBackend) doTaskRequest(taskUUID string, method string, body *UpdateT
 
 func (a *APIBackend) doRequest(uri string, method string, body interface{}) ([]byte, error) {
 	req := fasthttp.AcquireRequest()
-	req.SetRequestURI(fmt.Sprintf("%s%s",a.cnf.APIConfig.BaseURL, uri))
+	req.SetRequestURI(fmt.Sprintf("%s%s",a.cnf.ResultBackend, uri))
 	req.Header.SetMethod(strings.ToUpper(method))
 	req.Header.SetContentType("application/json")
 
